@@ -70,6 +70,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "SpawnManager",
+            "id": "b1e91d50-e1b6-48d3-ab45-653389636246",
+            "actions": [
+                {
+                    "name": "Animals",
+                    "type": "Button",
+                    "id": "7000be77-4ed3-4744-b7b2-a26f6d30818d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f2843e01-5d1f-421f-9990-93ba65f37ad2",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Animals",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

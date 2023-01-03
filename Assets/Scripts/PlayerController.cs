@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
     void OnLaunch()
     {
         // Launch a projectile from player
-        Debug.Log("Lauch Pizza");
+        // Debug.Log("Lauch Pizza");
         Instantiate(projectilePrebab, transform.position, projectilePrebab.transform.rotation);
     }
 
