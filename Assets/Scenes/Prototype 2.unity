@@ -626,7 +626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  xRange: 15
+  xRange: 22
   projectilePrebab: {fileID: 3455832435176747141, guid: 9d0b26754a377dd48936440a95910b9c, type: 3}
 --- !u!114 &883534155
 MonoBehaviour:
