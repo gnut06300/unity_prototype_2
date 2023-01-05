@@ -38,10 +38,37 @@ public class PlayerController : MonoBehaviour
         }
     }*/
 
-    void OnMove(InputValue movementValue)
+    #region Send Messages
+    // Fonctions pour les Send Messages
+    /*void OnMove(InputValue movementValue)
     {
         movementX = movementValue.Get<float>();
     }
+
+    void OnLaunch()
+    {
+        // Launch a projectile from player
+        // Debug.Log("Lauch Pizza");
+        Instantiate(projectilePrebab, transform.position, projectilePrebab.transform.rotation);
+    }*/
+    #endregion
+
+    #region Unity Events
+    // Fonctions pour les Unity Events
+    public void MoveCharacter(InputAction.CallbackContext ctx)
+    {
+        movementX = ctx.ReadValue<float>();
+    }
+
+    public void LauchPizza(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
+            Instantiate(projectilePrebab, transform.position, projectilePrebab.transform.rotation);
+        }
+       
+    }
+    #endregion
 
     private void FixedUpdate()
     {
@@ -55,13 +82,6 @@ public class PlayerController : MonoBehaviour
         }
 
         transform.Translate(Vector3.right * movementX * Time.deltaTime * speed);
-    }
-
-    void OnLaunch()
-    {
-        // Launch a projectile from player
-        // Debug.Log("Lauch Pizza");
-        Instantiate(projectilePrebab, transform.position, projectilePrebab.transform.rotation);
     }
 
 }
