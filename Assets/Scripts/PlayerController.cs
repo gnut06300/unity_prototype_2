@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     //public float horizontalInput;
     public float speed = 10.0f;
-    public float xRange = 22.0f;
+    public float xRange = 16.0f;
     public GameObject projectilePrebab;
     private float movementX;
 

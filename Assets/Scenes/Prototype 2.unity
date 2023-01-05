@@ -563,6 +563,7 @@ MonoBehaviour:
   - {fileID: 7343768026928927612, guid: 992baf81efd7fae4fa8f7e8bbf991839, type: 3}
   - {fileID: 3543746657354432037, guid: 1a8026326dd24af409fb66fb59c22c39, type: 3}
   - {fileID: 6711800150902797488, guid: eca209ae970584845a1e52e71d99e9af, type: 3}
+  spawnRangeX: 15
 --- !u!4 &867188228
 Transform:
   m_ObjectHideFlags: 0
@@ -626,7 +627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  xRange: 22
+  xRange: 16
   projectilePrebab: {fileID: 3455832435176747141, guid: 9d0b26754a377dd48936440a95910b9c, type: 3}
 --- !u!114 &883534155
 MonoBehaviour:
